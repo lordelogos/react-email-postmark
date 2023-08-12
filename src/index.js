@@ -4,7 +4,7 @@ import { ServerClient } from "postmark";
 
 const emailHtml = render(Email({ url: "https://example.com" }));
 
-const client = new ServerClient("");
+const client = new ServerClient(""); // pass in your api key
 
 const options = {
   From: "you@example.com",
